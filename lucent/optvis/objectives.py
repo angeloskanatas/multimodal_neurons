@@ -383,12 +383,12 @@ def total_variation(layer="input"):
     This operation is most often used as a penalty to reduce noise.
     See Mahendran, V. 2014. Understanding Deep Image Representations by Inverting Them.
     """
-    def tv_loss(T):
+    def inner(T):
         tv_x = torch.pow(T(layer)[:, :, 1:, :] - T(layer)[:, :, :-1, :], 2).sum()
         tv_y = torch.pow(T(layer)[:, :, :, 1:] - T(layer)[:, :, :, :-1], 2).sum()
-        return (tv_x + tv_y) / 2
+        return -(tv_x + tv_y) / 2
 
-    return -tv_loss
+    return inner
     
     
 @wrap_objective()

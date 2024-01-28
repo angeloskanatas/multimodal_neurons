@@ -48,6 +48,6 @@ def to_valid_rgb(image_f, decorrelate=False, alpha=False):
         if alpha:
             image_tensor_alpha = image_tensor[:, 3:, :, :]
             alpha_channel = torch.sigmoid(image_tensor_alpha)
-            image = torch.cat((image_tensor_rgb, alpha_channel), dim=1)
+            image = torch.cat((image, alpha_channel), dim=1)
         return image
     return inner
