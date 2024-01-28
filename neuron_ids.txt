@@ -1,9 +1,0 @@
-<concept>	<neuron_id>
-happy	1512
-evil	1739
-usa	862
-west_africa	1257
-donald_trumb	89
-group_photo	1388
-green	2504
-shocked	2478
