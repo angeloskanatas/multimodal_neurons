@@ -1,7 +1,7 @@
 ResNet
-<concept>	<neuron_id>
-happy	1512
-evil	1739
+<concept>	<neuron_id>	<details>
+happy	1512	bn block
+evil	1739	conv block
 usa	862
 west_africa	1257
 donald_trumb	89
