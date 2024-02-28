@@ -1,4 +1,5 @@
 ResNet
+
 <concept>	<neuron_id>	<details>
 happy	1512	bn block
 evil	1739	conv block
@@ -11,5 +12,6 @@ shocked	2478
 string_instruments	1093
 
 ViT
-<concept>	<head>
+
+<concept>	<head>	<details>
 
